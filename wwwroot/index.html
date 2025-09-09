@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Weather Dashboard</h1>
+        <p>Enter a city name:</p>
+      </header>
+
+      <main>
+        <div class="search-section">
+          <div class="search-container">
+            <input
+              type="text"
+              id="cityInput"
+              placeholder="Enter city name (e.g., London, New York)"
+            />
+            <button id="searchBtn">Get Weather</button>
+          </div>
+          <div class="error-message" id="errorMessage"></div>
+        </div>
+
+        <div class="weather-display" id="weatherDisplay">
+          <div class="welcome-message">
+            <h2>Weather Dashboard</h2>
+            <p>Enter a city name above to get started!</p>
+          </div>
+        </div>
+
+        <div class="recent-searches" id="recentSearches">
+          <h3>Recent Searches</h3>
+          <div class="search-history" id="searchHistory"></div>
+        </div>
+      </main>
+
+      <footer>
+        <p>Powered by wttr.in API</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
